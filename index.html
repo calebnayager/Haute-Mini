@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haute Mini</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="logo.png" alt="logo Haute Mini" width="125px">
+                </div>
+                <nav>
+
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                    <a href="#" class="floating-cart" id="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+
+                    <div id="cart-panel" class="cart-panel hidden">
+                        <h2>Your Cart</h2>
+                        <ul id="cart-items"></ul>
+                        <p id="cart-total">Total: R0</p>
+                        <button id="close-cart">Back to Shopping</button>
+                    </div>
+                </nav>
+            </div>
+            <div id="about">
+            <div class="row">
+                <div class="col-2">
+                    <h1>Chic Styles<br>For Your Little Stars</h1>
+                    <p>Welcome to Haute Mini – proudly South African style <br> Inspired by the rich colours, cultures, and creativity of Mzansi, Haute Mini brings fashion-forward looks to the youngest trendsetters.
+                        Our collections celebrate playfulness and personality, with comfy, high-quality pieces perfect for every mini milestone — from first steps to big adventures.</p>
+                    <a href="#products" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="img1.png" alt="Kids Fashion Models">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Feature Categories -->
+    <div class="categories">
+        <div class="small-container">
+         <div class="row">
+             <div class="col-3">
+                 <img src="category-1.jpg" alt="girls tracksuit">
+        </div>
+             <div class="col-3">
+                 <img src="category-2.jpg" alt="boys cargo pants and jackets">
+        </div>
+             <div class="col-3">
+                 <img src="category-3.jpg" alt="boys summer outfits">
+    </div>
+</div>
+        </div>
+    </div>
+<!-- Featured Products-->
+    <div id="products" class="categories">
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="product-1.png" alt="Glow In the Dark pyjamas">
+                <h4>Kids Glow In The Dark Pyjamas</h4>
+                <div class="rating" data-rating="0">
+                    <i class="far fa-star" data-value="1"></i>
+                    <i class="far fa-star" data-value="2"></i>
+                    <i class="far fa-star" data-value="3"></i>
+                    <i class="far fa-star" data-value="4"></i>
+                    <i class="far fa-star" data-value="5"></i>
+                </div>
+                <p>R150 <br>7-8 years</p>
+                <button class="add-to-cart-btn" data-name="Kids Glow In The Dark Pyjamas" data-price="150">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="product-2.jpg" alt="Boys Graphic Shorts and T-shirt">
+                <h4>Boys Graphic Shorts and T-shirt</h4>
+                <div class="rating" data-rating="0">
+                    <i class="far fa-star" data-value="1"></i>
+                    <i class="far fa-star" data-value="2"></i>
+                    <i class="far fa-star" data-value="3"></i>
+                    <i class="far fa-star" data-value="4"></i>
+                    <i class="far fa-star" data-value="5"></i>
+                </div>
+                <p>R200<br>12-13 years</p>
+                <button class="add-to-cart-btn" data-name="Boys Graphic Shorts and T-shirt" data-price="200">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="product-3.jpg" alt="Girls Summer Jumpsuit">
+                <h4>Girls Summer Jumpsuit</h4>
+                <div class="rating" data-rating="0">
+                    <i class="far fa-star" data-value="1"></i>
+                    <i class="far fa-star" data-value="2"></i>
+                    <i class="far fa-star" data-value="3"></i>
+                    <i class="far fa-star" data-value="4"></i>
+                    <i class="far fa-star" data-value="5"></i>
+                </div>
+                <p>R160<br>7-8 years</p>
+                <button class="add-to-cart-btn" data-name="Girls Summer Jumpsuit" data-price="160">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="product-4.jpg" alt="Unisex Tracksuits">
+                <h4>Unisex Tracksuits</h4>
+                <div class="rating" data-rating="0">
+                    <i class="far fa-star" data-value="1"></i>
+                    <i class="far fa-star" data-value="2"></i>
+                    <i class="far fa-star" data-value="3"></i>
+                    <i class="far fa-star" data-value="4"></i>
+                    <i class="far fa-star" data-value="5"></i>
+                </div>
+                <p>R200<br>9-10 years</p>
+                <button class="add-to-cart-btn" data-name="Unisex Tracksuits" data-price="200">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="boys%20winter.jpg" alt="Boys winter coats">
+                <h4>Boys Winter Jackets</h4>
+                <div class="rating" data-rating="0">
+                    <i class="far fa-star" data-value="1"></i>
+                    <i class="far fa-star" data-value="2"></i>
+                    <i class="far fa-star" data-value="3"></i>
+                    <i class="far fa-star" data-value="4"></i>
+                    <i class="far fa-star" data-value="5"></i>
+                </div>
+                <p>R160<br>9-10 years</p>
+                <button class="add-to-cart-btn" data-name="Boys Winter Jackets" data-price="160">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="Girls%20pink%20fashion.jpg" alt="Girls pink jeans and jacket">
+                <h4>Girls Pink Jeans and Jacket</h4>
+                <div class="rating" data-rating="0">
+                    <i class="far fa-star" data-value="1"></i>
+                    <i class="far fa-star" data-value="2"></i>
+                    <i class="far fa-star" data-value="3"></i>
+                    <i class="far fa-star" data-value="4"></i>
+                    <i class="far fa-star" data-value="5"></i>
+                </div>
+                <p>R400<br>11-12years</p>
+                <button class="add-to-cart-btn" data-name="Girls Pink Jeans and Jacket" data-price="400">Add to Cart</button>
+            </div>
+        </div>
+        <!--Latest Products -->
+        <h2 class="title" id="latest-products">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="product-5.jpg" alt="Girls Linen Skirt Set">
+                <h4>Girls Linen Skirt Set</h4>
+                <div class="rating" data-rating="0">
+                    <i class="far fa-star" data-value="1"></i>
+                    <i class="far fa-star" data-value="2"></i>
+                    <i class="far fa-star" data-value="3"></i>
+                    <i class="far fa-star" data-value="4"></i>
+                    <i class="far fa-star" data-value="5"></i>
+                </div>
+                <p>R170<br>6-7 years</p>
+                <button class="add-to-cart-btn" data-name="Girls Linen Skirt Set" data-price="170">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="product-6.jpg" alt="Girls Winter Coat Blue">
+                <h4>Girls Winter Coat Blue</h4>
+                <div class="rating" data-rating="0">
+                    <i class="far fa-star" data-value="1"></i>
+                    <i class="far fa-star" data-value="2"></i>
+                    <i class="far fa-star" data-value="3"></i>
+                    <i class="far fa-star" data-value="4"></i>
+                    <i class="far fa-star" data-value="5"></i>
+                </div>
+                <p>R300<br>6-7 years</p>
+                <button class="add-to-cart-btn" data-name="Girls Winter Coat Blue" data-price="300">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="product-7.jpg" alt="Boys Denim Jumpsuit">
+                <h4>Boys Denim Jumpsuit</h4>
+                <div class="rating" data-rating="0">
+                    <i class="far fa-star" data-value="1"></i>
+                    <i class="far fa-star" data-value="2"></i>
+                    <i class="far fa-star" data-value="3"></i>
+                    <i class="far fa-star" data-value="4"></i>
+                    <i class="far fa-star" data-value="5"></i>
+                </div>
+                <p>R250<br>9-10 years</p>
+                <button class="add-to-cart-btn" data-name="Boys Denim Jumpsuit" data-price="250">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="product-8.jpg" alt="Boys Shorts and Buttoned Shirt Set">
+                <h4>Boys Shorts and Buttoned Shirt Set</h4>
+                <div class="rating" data-rating="0">
+                    <i class="far fa-star" data-value="1"></i>
+                    <i class="far fa-star" data-value="2"></i>
+                    <i class="far fa-star" data-value="3"></i>
+                    <i class="far fa-star" data-value="4"></i>
+                    <i class="far fa-star" data-value="5"></i>
+                </div>
+                <p>R200<br>9-10 years</p>
+                <button class="add-to-cart-btn" data-name="Boys Shorts and Buttoned Shirt Set" data-price="200">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="product-9.jpg" alt="Boys Grey Cargo Pants">
+                <h4>Boys Grey Cargo Pants</h4>
+                <div class="rating" data-rating="0">
+                    <i class="far fa-star" data-value="1"></i>
+                    <i class="far fa-star" data-value="2"></i>
+                    <i class="far fa-star" data-value="3"></i>
+                    <i class="far fa-star" data-value="4"></i>
+                    <i class="far fa-star" data-value="5"></i>
+                </div>
+                <p>R170<br>11-12 years</p>
+                <button class="add-to-cart-btn" data-name="Boys Grey Cargo Pants" data-price="170">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="product-10.png" alt="Girls Summer Dress">
+                <h4>Girls Summer Dress</h4>
+                <div class="rating" data-rating="0">
+                    <i class="far fa-star" data-value="1"></i>
+                    <i class="far fa-star" data-value="2"></i>
+                    <i class="far fa-star" data-value="3"></i>
+                    <i class="far fa-star" data-value="4"></i>
+                    <i class="far fa-star" data-value="5"></i>
+                </div>
+                <p>R180<br>11-12 years</p>
+                <button class="add-to-cart-btn" data-name="Girls Summer Dress" data-price="180">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="product-11.png" alt="Girls Nike Sneakers Pink">
+                <h4>Girls Nike Sneakers Pink</h4>
+                <div class="rating" data-rating="0">
+                    <i class="far fa-star" data-value="1"></i>
+                    <i class="far fa-star" data-value="2"></i>
+                    <i class="far fa-star" data-value="3"></i>
+                    <i class="far fa-star" data-value="4"></i>
+                    <i class="far fa-star" data-value="5"></i>
+                </div>
+                <p>R800<br>Size 1</p>
+                <button class="add-to-cart-btn" data-name="Girls Nike Sneakers Pink" data-price="800">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="product-12.png" alt="Boys Blue Nike Sneakers">
+                <h4>Boys Blue Nike Sneakers</h4>
+                <div class="rating" data-rating="0">
+                    <i class="far fa-star" data-value="1"></i>
+                    <i class="far fa-star" data-value="2"></i>
+                    <i class="far fa-star" data-value="3"></i>
+                    <i class="far fa-star" data-value="4"></i>
+                    <i class="far fa-star" data-value="5"></i>
+                </div>
+                <p>R1000<br>Size 1</p>
+                <button class="add-to-cart-btn" data-name="Boys Blue Nike Sneakers" data-price="1000">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="product-13.png" alt="Unisex Nike Sneakers">
+                <h4>Unisex Nike Sneakers</h4>
+                <div class="rating" data-rating="0">
+                    <i class="far fa-star" data-value="1"></i>
+                    <i class="far fa-star" data-value="2"></i>
+                    <i class="far fa-star" data-value="3"></i>
+                    <i class="far fa-star" data-value="4"></i>
+                    <i class="far fa-star" data-value="5"></i>
+                </div>
+                <p>R1200<br>Size 1</p>
+                <button class="add-to-cart-btn" data-name="Unisex Nike Sneakers" data-price="1200">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- Offer -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="exclusive.png" alt="sunglasses" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on Haute Mini</p>
+                    <h1>Sunglasses</h1>
+                    <small>
+                        🕶️ FREE Kids’ Sunglasses with Your First Order! <br>
+                        New here? We’ve got a sunny surprise just for you! <br>
+                        Get a FREE pair of stylish kids' sunglasses (worth R99) when you place your first order. <br>
+                        Because cool kids deserve cool shades
+                    </small>
+                    <a href="#latest-products" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact Form  -->
+    <div id="contact" class="contact-form">
+    <form action="https://formspree.io/f/moveraln" method="POST">
+        <h2>Contact Me</h2>
+
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const ratings = document.querySelectorAll(".rating");
+
+          ratings.forEach(rating => {
+            const stars = rating.querySelectorAll("i");
+
+            stars.forEach(star => {
+              star.addEventListener("mouseenter", () => {
+                const val = star.getAttribute("data-value");
+                stars.forEach(s => {
+                  s.classList.toggle("fas", s.getAttribute("data-value") <= val);
+                  s.classList.toggle("far", s.getAttribute("data-value") > val);
+                });
+              });
+
+              star.addEventListener("click", () => {
+                rating.setAttribute("data-rating", star.getAttribute("data-value"));
+              });
+
+              rating.addEventListener("mouseleave", () => {
+                const val = rating.getAttribute("data-rating");
+                stars.forEach(s => {
+                  s.classList.toggle("fas", s.getAttribute("data-value") <= val);
+                  s.classList.toggle("far", s.getAttribute("data-value") > val);
+                });
+              });
+            });
+          });
+        });
+    </script>
+
+    <script>
+        // Your interactive rating + cart JavaScript
+        document.addEventListener("DOMContentLoaded", function () {
+            const ratings = document.querySelectorAll(".rating");
+
+            ratings.forEach(rating => {
+                const stars = rating.querySelectorAll("i");
+
+                stars.forEach(star => {
+                    star.addEventListener("mouseenter", () => {
+                        const val = star.getAttribute("data-value");
+                        stars.forEach(s => {
+                            s.classList.toggle("fas", s.getAttribute("data-value") <= val);
+                            s.classList.toggle("far", s.getAttribute("data-value") > val);
+                        });
+                    });
+
+                    star.addEventListener("click", () => {
+                        rating.setAttribute("data-rating", star.getAttribute("data-value"));
+                    });
+
+                    rating.addEventListener("mouseleave", () => {
+                        const val = rating.getAttribute("data-rating");
+                        stars.forEach(s => {
+                            s.classList.toggle("fas", s.getAttribute("data-value") <= val);
+                            s.classList.toggle("far", s.getAttribute("data-value") > val);
+                        });
+                    });
+                });
+            });
+
+            // Shopping Cart Functionality
+            const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+            const cartItemsList = document.getElementById('cart-items');
+            const cartTotal = document.getElementById('cart-total');
+            const cartCount = document.querySelector('.cart-count');
+            const cartPanel = document.getElementById('cart-panel');
+            const cartIcon = document.getElementById('cart-icon');
+            const closeCartBtn = document.getElementById('close-cart');
+
+            let cart = [];
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const name = button.getAttribute('data-name');
+                    const price = parseFloat(button.getAttribute('data-price'));
+                    const existingItem = cart.find(item => item.name === name);
+
+                    if (existingItem) {
+                        existingItem.quantity += 1;
+                    } else {
+                        cart.push({ name, price, quantity: 1 });
+                    }
+
+                    updateCartUI();
+                });
+            });
+
+            function updateCartUI() {
+                cartItemsList.innerHTML = '';
+                let total = 0;
+                let count = 0;
+
+                cart.forEach(item => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `
+                        ${item.name} (x${item.quantity}) - R${item.price * item.quantity}
+                        <button class="remove-btn" data-name="${item.name}">Remove</button>
+                    `;
+                    cartItemsList.appendChild(li);
+
+                    total += item.price * item.quantity;
+                    count += item.quantity;
+                });
+
+                cartTotal.textContent = `Total: R${total}`;
+                cartCount.textContent = count;
+
+                const removeButtons = document.querySelectorAll('.remove-btn');
+                removeButtons.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const name = btn.getAttribute('data-name');
+                        cart = cart.filter(item => item.name !== name);
+                        updateCartUI();
+                    });
+                });
+            }
+
+            cartIcon.addEventListener('click', (e) => {
+                e.preventDefault();
+                cartPanel.classList.toggle('hidden');
+            });
+
+            closeCartBtn.addEventListener('click', () => {
+                cartPanel.classList.add('hidden');
+            });
+        });
+    </script>
+    </div>
+    </div>
+</body>
+</html>
+
